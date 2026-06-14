@@ -44,7 +44,7 @@ A modern, responsive travel and tour booking website for Uttarakhand tourism, Ch
 
 1. Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/saurav-trek-tours.git
+git clone https://github.com/ItsDevArya/saurav-trek-tours.git
 
 2. Open project folder
 
