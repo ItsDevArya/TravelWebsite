@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Trek & Tours | Char Dham Yatra & Uttarakhand Tour Specialist</title>
+    <meta name="description" content="Book customized Char Dham Yatra, Kedarnath, Badrinath, Nainital, Mussoorie tours, and Valley of Flowers treks with Saurav Trek & Tours. Your trusted Uttarakhand travel partner.">
+    <meta name="keywords" content="Char Dham Yatra, Kedarnath Tour, Badrinath Tour, Uttarakhand Treks, Nainital Package, Mussoorie Tour, Saurav Trek and Tours">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Saurav Trek & Tours | Uttarakhand Tour Specialist">
+    <meta property="og:description" content="Embark on divine journeys and Himalayan adventures. Expert local guides, 100% safe execution, and transparent pricing.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Saurav Trek & Tours",
+      "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80",
+      "description": "Specialized travel agency for Char Dham Yatra, Himalayan trekking, and customized Uttarakhand holiday packages.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near GMVN Office",
+        "addressLocality": "Rishikesh",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "249201",
+        "addressCountry": "IN"
+      },
+      "telephone": "+919999999999",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-deep: #0B251C;    /* Deep Himalayan Pine Forest Green */
+            --accent-orange: #F2994A;  /* Spiritual Marigold / Sacred Sunset Orange */
+            --light-mint: #F4F9F6;     /* Refreshing Mountain Mist Air */
+            --dark-gray: #2D3732;
+            --font-heading: 'Marcellus', serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--dark-gray);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: var(--font-heading);
+            color: var(--primary-deep);
+        }
+
+        /* Navbar Customization */
+        .navbar {
+            background-color: rgba(11, 37, 28, 0.95) !important;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-orange) !important;
+        }
+
+        /* Hero Banner Section */
+        .hero-section {
+            background: linear-gradient(rgba(11, 37, 28, 0.65), rgba(11, 37, 28, 0.75)), 
+                        url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-top: 80px;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.2rem; }
+        }
+
+        /* Button Styling */
+        .btn-custom-primary {
+            background-color: var(--accent-orange);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        .btn-custom-primary:hover {
+            background-color: #d97e2e;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .btn-custom-outline {
+            border: 2px solid white;
+            color: white;
+            padding: 11px 30px;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+        .btn-custom-outline:hover {
+            background-color: white;
+            color: var(--primary-deep);
+            transform: translateY(-2px);
+        }
+
+        /* Package Cards Styling */
+        .section-padding {
+            padding: 80px 0;
+        }
+        .bg-light-mint {
+            background-color: var(--light-mint);
+        }
+        .card-tour {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fff;
+            height: 100%;
+        }
+        .card-tour:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(11,37,28,0.15);
+        }
+        .card-tour img {
+            height: 240px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .card-tour:hover img {
+            transform: scale(1.05);
+        }
+        .badge-tag {
+            background-color: var(--primary-deep);
+            color: var(--accent-orange);
+            font-weight: 600;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Feature Section */
+        .feature-icon-box {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(242, 153, 74, 0.1);
+            color: var(--accent-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+        .feature-card:hover .feature-icon-box {
+            background-color: var(--accent-orange);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        /* Testimonials Card */
+        .testimonial-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border-left: 5px solid var(--accent-orange);
+        }
+
+        /* Gallery Grid */
+        .gallery-img {
+            height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+            filter: brightness(0.9);
+        }
+
+        /* Sticky / Floating WhatsApp Widget */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        /* Contact & Form Configuration */
+        .form-control, .form-select {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ced4da;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 0 0.25rem rgba(242, 153, 74, 0.25);
+        }
+        footer {
+            background-color: var(--primary-deep);
+            color: rgba(255,255,255,0.8);
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <i class="fa-solid fa-mountain-sun me-2 text-warning"></i>
+                <span class="fw-bold tracking-wide text-white">SAURAV TREK & TOURS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link href-target" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link href-target" href="#packages">Tour Packages</a></li>
+                    <li class="nav-item"><a class="nav-link href-target" href="#why-us">Why Choose Us</a></li>
+                    <li class="nav-item"><a class="nav-link href-target" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link href-target" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link href-target" href="#contact">Contact Us</a></li>
+                </ul>
+                <a href="#booking-section" class="btn btn-custom-primary ms-lg-3">Book Your Journey</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="badge badge-tag mb-3 px-3 py-2 rounded-pill"><i class="fa-solid fa-om me-2"></i>Char Dham Yatra Specialists Since 2005</span>
+                    <h1 class="hero-title text-white mb-3">Explore the Himalayas with Us</h1>
+                    <p class="lead text-white-50 fs-4 mb-4">Complete Sacred Circuits, High Altitude Wilderness Treks, Family Getaways & Tailored Holiday Blueprints across Uttarakhand.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#booking-section" class="btn btn-custom-primary btn-lg">Book Now <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="https://wa.me/919999999999?text=Hi%20Saurav%20Trek%20Tours,%20I%20am%20interested%20in%20booking%20a%20trip." target="_blank" class="btn btn-custom-outline btn-lg"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="packages" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-muted text-uppercase fw-bold tracking-wider">Popular Tours</span>
+                <h2 class="display-5 fw-bold mt-2">Handcrafted Himalayan Packages</h2>
+                <div class="mx-auto bg-warning" style="width: 80px; height: 3px; border-radius: 2px;"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tour">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=600&q=80" class="w-100" alt="Char Dham Yatra Circuit">
+                            <span class="position-absolute top-0 end-0 m-3 badge bg-dark text-warning py-2 px-3">12 Days</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="h4 mb-2">Char Dham Yatra Complete Circuit</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot text-danger me-2"></i>Yamunotri - Gangotri - Kedarnath - Badrinath</p>
+                            <p class="text-secondary card-text-sync">A complete all-inclusive holy pilgrimage run with expert local guides, robust mountain transit vehicles, clean stays, and priority VIP darshans.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div><span class="text-muted small">Starting From</span><h4 class="text-success fw-bold mb-0">₹18,999/-</h4></div>
+                                <a href="#booking-section" onclick="setDestination('Char Dham Yatra (All 4 Dhams)')" class="btn btn-sm btn-custom-primary">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tour">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=600&q=80" class="w-100" alt="Kedarnath Temple Valley">
+                            <span class="position-absolute top-0 end-0 m-3 badge bg-dark text-warning py-2 px-3">5 Days</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="h4 mb-2">Kedarnath Pilgrimage Yatra</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot text-danger me-2"></i>Haridwar - Guptkashi - Kedarnath Divine Shrine</p>
+                            <p class="text-secondary card-text-sync">Trek safely or take smooth helicopter routes up to the ultimate seat of Lord Shiva among majestic snow-peaked amphitheaters.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div><span class="text-muted small">Starting From</span><h4 class="text-success fw-bold mb-0">₹8,499/-</h4></div>
+                                <a href="#booking-section" onclick="setDestination('Kedarnath Yatra')" class="btn btn-sm btn-custom-primary">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tour">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1588613254750-cf5d40974fa2?auto=format&fit=crop&w=600&q=80" class="w-100" alt="Badrinath Temple View">
+                            <span class="position-absolute top-0 end-0 m-3 badge bg-dark text-warning py-2 px-3">6 Days</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="h4 mb-2">Badrinath & Alaknanda Tour</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot text-danger me-2"></i>Rishikesh - Joshimath - Badrinath - Mana Village</p>
+                            <p class="text-secondary card-text-sync">Pay your respects at the historic abode of Lord Vishnu. Explore Mana Village (the last Indian Village) and view stunning hot springs.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div><span class="text-muted small">Starting From</span><h4 class="text-success fw-bold mb-0">₹9,999/-</h4></div>
+                                <a href="#booking-section" onclick="setDestination('Badrinath Tour')" class="btn btn-sm btn-custom-primary">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tour">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=600&q=80" class="w-100" alt="Nainital Lake">
+                            <span class="position-absolute top-0 end-0 m-3 badge bg-dark text-warning py-2 px-3">3 Days</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="h4 mb-2">Nainital Scenic Lake Tour</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot text-danger me-2"></i>Naini Lake - Naina Devi Temple - Bhimtal</p>
+                            <p class="text-secondary card-text-sync">Relax with clear emerald lake views, pleasant boating experiences, historical marketplace walks, and dynamic high-point cable car views.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div><span class="text-muted small">Starting From</span><h4 class="text-success fw-bold mb-0">₹5,499/-</h4></div>
+                                <a href="#booking-section" onclick="setDestination('Nainital Tour')" class="btn btn-sm btn-custom-primary">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tour">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=600&q=80" class="w-100" alt="Mussoorie Hills">
+                            <span class="position-absolute top-0 end-0 m-3 badge bg-dark text-warning py-2 px-3">3 Days</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="h4 mb-2">Mussoorie: Queen of Hills</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot text-danger me-2"></i>Mall Road - Kempty Falls - Lal Tibba Viewpoint</p>
+                            <p class="text-secondary card-text-sync">A perfect weekend mountain escape featuring cold mist paths, pine-tree viewing ridges, and historic architectural landmarks.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div><span class="text-muted small">Starting From</span><h4 class="text-success fw-bold mb-0">₹4,999/-</h4></div>
+                                <a href="#booking-section" onclick="setDestination('Mussoorie Tour')" class="btn btn-sm btn-custom-primary">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-tour">
+                        <div class="position-relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=600&q=80" class="w-100" alt="Valley of flowers trekking">
+                            <span class="position-absolute top-0 end-0 m-3 badge bg-dark text-warning py-2 px-3">7 Days</span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="h4 mb-2">Valley of Flowers Alpine Trek</h3>
+                            <p class="text-muted small"><i class="fa-solid fa-location-dot text-danger me-2"></i>Govindghat - Ghangaria - UNESCO Valley Wilderness</p>
+                            <p class="text-secondary card-text-sync">Walk through a vibrant, high-altitude UNESCO World Heritage glacial valley blanketed with hundreds of species of blooming wildflowers.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div><span class="text-muted small">Starting From</span><h4 class="text-success fw-bold mb-0">₹12,499/-</h4></div>
+                                <a href="#booking-section" onclick="setDestination('Valley of Flowers Trek')" class="btn btn-sm btn-custom-primary">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="section-padding bg-light-mint">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-muted text-uppercase fw-bold tracking-wider">Our Core Commitment</span>
+                <h2 class="display-5 fw-bold mt-2">Why Travel With Saurav Trek & Tours</h2>
+                <div class="mx-auto bg-warning" style="width: 80px; height: 3px;"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 feature-card">
+                    <div class="p-4 text-center">
+                        <div class="feature-icon-box mx-auto"><i class="fa-solid fa-user-shield"></i></div>
+                        <h3 class="h5 fw-bold">Expert Local Guides</h3>
+                        <p class="text-muted">Our mountain guides have over 10 years of experience navigating high-altitude routes and managing pilgrimage logistics smoothly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <div class="p-4 text-center">
+                        <div class="feature-icon-box mx-auto"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3 class="h5 fw-bold">Affordable & Transparent</h3>
+                        <p class="text-muted">Enjoy fair, upfront pricing with zero hidden handling costs. We ensure maximum value for your travel budget.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <div class="p-4 text-center">
+                        <div class="feature-icon-box mx-auto"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3 class="h5 fw-bold">100% Safe Execution</h3>
+                        <p class="text-muted">Your safety is our priority. We feature fully vetted transport configurations, emergency medical response frameworks, and reliable hotels.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 feature-card mx-auto">
+                    <div class="p-4 text-center">
+                        <div class="feature-icon-box mx-auto"><i class="fa-solid fa-headset"></i></div>
+                        <h3 class="h5 fw-bold">24/7 On-Tour Support</h3>
+                        <p class="text-muted">Get around-the-clock help via our active WhatsApp support line for real-time updates while on the road.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 feature-card mx-auto">
+                    <div class="p-4 text-center">
+                        <div class="feature-icon-box mx-auto"><i class="fa-solid fa-sliders"></i></div>
+                        <h3 class="h5 fw-bold">Custom Itineraries</h3>
+                        <p class="text-muted">Modify routes easily to match your family's pace, health requirements, or specific group goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-muted text-uppercase fw-bold tracking-wider">Traveller Reviews</span>
+                <h2 class="display-5 fw-bold mt-2">What Our Pilgrims Say</h2>
+                <div class="mx-auto bg-warning" style="width: 80px; height: 3px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="fst-italic text-secondary">"Saurav Trek & Tours organized our Char Dham Yatra beautifully. The accommodations were clean, the vehicle was highly comfortable, and the guide knew the history of every location perfectly."</p>
+                        <h4 class="h6 fw-bold mb-0 mt-3">— Ramesh Sharma, Delhi</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="text-warning mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="fst-italic text-secondary">"Our trek to the Valley of Flowers was spectacular. Everything was handled seamlessly, from porter arrangements to meal stops. Highly recommended for family treks!"</p>
+                        <h4 class="h6 fw-bold mb-0 mt-3">— Priya Mehta, Mumbai</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding bg-light-mint">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-muted text-uppercase fw-bold tracking-wider">Visual Memories</span>
+                <h2 class="display-5 fw-bold mt-2">Moments From The Mountains</h2>
+                <div class="mx-auto bg-warning" style="width: 80px; height: 3px;"></div>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=500&q=80" class="w-100 gallery-img" alt="Himalayan Peak"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=500&q=80" class="w-100 gallery-img" alt="Kedarnath Valley"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1588613254750-cf5d40974fa2?auto=format&fit=crop&w=500&q=80" class="w-100 gallery-img" alt="Badrinath View"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=500&q=80" class="w-100 gallery-img" alt="Nainital Lake Area"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=500&q=80" class="w-100 gallery-img" alt="Mussoorie Valleys"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=500&q=80" class="w-100 gallery-img" alt="Trek Basecamp"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container" id="booking-section">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <span class="text-muted text-uppercase fw-bold tracking-wider">Get In Touch</span>
+                    <h2 class="display-6 fw-bold mt-2 mb-4">Plan Your Journey</h2>
+                    <p class="text-muted">Fill out the registration form to lock in your seats for upcoming seasonal departures. Our local travel engineers will send over an itemized trip itinerary via email within 2 hours.</p>
+                    
+                    <div class="d-flex align-items-center mb-3 mt-4">
+                        <div class="fs-3 text-warning me-3"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>
+                            <h5 class="mb-0 fw-bold">Call / WhatsApp Support</h5>
+                            <p class="mb-0 text-muted">+91-99999-99999, +91-88888-88888</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="fs-3 text-warning me-3"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div>
+                            <h5 class="mb-0 fw-bold">Email Communication</h5>
+                            <p class="mb-0 text-muted">booking@sauravtreknours.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="fs-3 text-warning me-3"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div>
+                            <h5 class="mb-0 fw-bold">Main Office Address</h5>
+                            <p class="mb-0 text-muted">Near GMVN Office, Rishikesh, Uttarakhand - 249201</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="p-4 p-md-5 rounded-3 bg-light shadow-sm">
+                        <h3 class="h4 fw-bold mb-4"><i class="fa-solid fa-file-signature me-2 text-warning"></i>Send Destination Booking Inquiry</h3>
+                        
+                        <form id="bookingForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Full Name *</label>
+                                    <input type="text" name="name" class="form-control" placeholder="E.g. Rajesh Kumar" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Phone Number *</label>
+                                    <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">WhatsApp Number</label>
+                                    <input type="tel" name="whatsapp" class="form-control" placeholder="If different from phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Email Address *</label>
+                                    <input type="email" name="email" class="form-control" placeholder="name@domain.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Select Destination *</label>
+                                    <select name="destination" id="destinationDropdown" class="form-select" required>
+                                        <option value="" disabled selected>Choose target route...</option>
+                                        <option value="Char Dham Yatra (All 4 Dhams)">Char Dham Yatra (All 4 Dhams)</option>
+                                        <option value="Kedarnath Yatra">Kedarnath Yatra</option>
+                                        <option value="Badrinath Tour">Badrinath Tour</option>
+                                        <option value="Gangotri Yamunotri">Gangotri Yamunotri</option>
+                                        <option value="Nainital Tour">Nainital Tour</option>
+                                        <option value="Mussoorie Tour">Mussoorie Tour</option>
+                                        <option value="Valley of Flowers Trek">Valley of Flowers Trek</option>
+                                        <option value="Weekend Getaway">Weekend Getaway</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">No. of Travelers *</label>
+                                    <select name="travelers" class="form-select" required>
+                                        <option value="1 Person">1 Person</option>
+                                        <option value="2 Persons (Couple)">2 Persons (Couple)</option>
+                                        <option value="3-5 Persons (Small Group)">3-5 Persons (Small Group)</option>
+                                        <option value="6-10 Persons (Group)">6-10 Persons (Group)</option>
+                                        <option value="11+ Persons (Large Group)">11+ Persons (Large Group)</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label small fw-bold">Target Travel Date *</label>
+                                    <input type="date" name="travel_date" class="form-control" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label small fw-bold">Message / Custom Requirements</label>
+                                    <textarea name="message" class="form-control" rows="3" placeholder="Dietary rules, age constraints, helicopter preferences..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" id="submitBtn" class="btn btn-custom-primary w-100 py-3 text-uppercase font-bold tracking-wide">Submit Travel Enquiry</button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div id="successMsg" class="alert alert-success d-none mt-3" role="alert">
+                            <i class="fa-solid fa-circle-check me-2"></i> Your inquiry was successfully recorded! Our travel team will contact you within 2 hours with pricing layouts.
+                        </div>
+                        <div id="errorMsg" class="alert alert-danger d-none mt-3" role="alert">
+                            <i class="fa-solid fa-triangle-exclamation me-2"></i> Processing failed. Please check your network connection or contact us directly on WhatsApp.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container text-center">
+            <h4 class="text-white fw-bold mb-3">Saurav Trek & Tours</h4>
+            <p class="text-white-50 max-w-md mx-auto mb-4">Crafting secure, memorable Himalayan adventures and spiritual journeys across Uttarakhand since 2005.</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="text-white-50 fs-4"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white-50 fs-4"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white-50 fs-4"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <hr class="border-secondary">
+            <p class="small text-white-50 mb-0">&copy; 2026 Saurav Trek & Tours. All Rights Reserved. Designed for performance & top tier search layout ranking.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919999999999?text=Hi%20Saurav%20Trek%20Tours,%20I'm%20on%20your%20site.%20I%20want%20to%20know%20more%20about%20the%20packages." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Directly maps quick-action cards directly to form selector dropdown value
+        function setDestination(name) {
+            const dropdown = document.getElementById('destinationDropdown');
+            dropdown.value = name;
+        }
+
+        // Configuration mapping for Google Script Web App API URL
+        // INSTRUCTION: Replace this string placeholder below with your live macro deployment URL
+        const WEB_APP_URL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec";
+
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMsg');
+            const errorMsg = document.getElementById('errorMsg');
+            
+            // UI Toggle States 
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Processing Details... Hold on...";
+            successMsg.classList.add('d-none');
+            errorMsg.classList.add('d-none');
+
+            // Extraction step
+            const formData = new FormData(this);
+            
+            // Send to Google Sheets Apps Script via Fetch API
+            fetch(WEB_APP_URL, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.result === 'success') {
+                    successMsg.classList.remove('d-none');
+                    document.getElementById('bookingForm').reset();
+                } else {
+                    errorMsg.classList.remove('d-none');
+                    console.error("Server execution error response:", data.message);
+                }
+            })
+            .catch(error => {
+                errorMsg.classList.remove('d-none');
+                console.error('Network request failed:', error);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Submit Travel Enquiry";
+            });
+        });
+    </script>
+</body>
+</html>
