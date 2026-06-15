@@ -4,7 +4,7 @@ AOS.init({ duration: 700, once: true, offset: 80, easing: 'ease-out-cubic' });
 // IMPORTANT: Replace this URL with your actual Google Apps Script Web App URL
 // See setup instructions below
 
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby2V0-GzMt_YwBxkZLuA3ak5JH5QNQp0CbgT9cf9bw-qPmVnU6KHr5hTby4-3C3Bme74Q/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby2l4xyqk9CV7XEHWMQnrYWq7GfGkOueS8489OWit-X9SuhqJlzHOo8XLIh3hAoFLMYMA/exec';
 
 // ── NAVBAR SCROLL ──
 window.addEventListener('scroll', () => {
@@ -88,7 +88,7 @@ function showModalSuccess(data) {
         Thank you <strong>${data.name}</strong>! Your booking request for <strong>${data.destination}</strong> has been received.
         We'll contact you on <strong>${data.phone}</strong> within 2 hours.
       </p>
-      <a href="https://wa.me/919999999999?text=Hi! I just filled the booking form for ${encodeURIComponent(data.destination)}. My name is ${encodeURIComponent(data.name)}."
+      <a href="https://wa.me/919756167177?text=Hi! I just filled the booking form for ${encodeURIComponent(data.destination)}. My name is ${encodeURIComponent(data.name)}."
          target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:white;padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:700;font-size:14px;">
         <i class="fab fa-whatsapp"></i> Confirm on WhatsApp
       </a>
