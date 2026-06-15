@@ -988,3 +988,43 @@ footer {
   position: relative;
   z-index: 999;
 }
+
+
+.devarya-owner-section {
+    padding: 100px 8%;
+    background: #fff;
+}
+
+.devarya-owner-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.devarya-owner-image-box img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.devarya-owner-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: #eef5ff;
+}
+
+.devarya-owner-title {
+    font-size: 3rem;
+    margin: 15px 0;
+}
+
+.devarya-owner-text {
+    line-height: 1.8;
+    color: #666;
+}
+
+
